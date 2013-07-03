@@ -10,7 +10,7 @@ gem "rmagick"
 gem "carrierwave"
 gem "twitter-bootstrap-rails"
   gem 'therubyracer'
-
+gem 'simple_form'
 
 
 group :development, :test do
