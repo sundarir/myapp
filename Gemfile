@@ -9,6 +9,8 @@ gem 'bootstrap-will_paginate', '0.0.6'
 gem "rmagick"
 gem "carrierwave"
 gem "twitter-bootstrap-rails"
+  gem 'therubyracer'
+
 
 
 group :development, :test do
@@ -23,7 +25,7 @@ end
 
 group :development do
   gem 'annotate', '2.5.0'
-  gem 'therubyracer'
+  
 end
 
 
