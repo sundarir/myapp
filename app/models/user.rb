@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessor :name, :email, :password, :password_confirmation, :contact, :address
+  attr_accessible :name, :email, :password, :password_confirmation, :contact, :address
   has_secure_password
 
   before_save { |user| user.email = email.downcase }
@@ -12,8 +12,9 @@ class User < ActiveRecord::Base
                     uniqueness: { case_sensitive: false }
   validates :password, presence: true, length: { minimum: 6 }
   validates :password_confirmation, presence: true
-  validates :contact, presence: true, length: { maximum: 10 }
-  validates :address, presence: true, length: { maximum: 50 }
+  after_validation { self.errors.messages.delete(:password_digest) }
+  validates :contact, presence: true, length: { maximum: 50 , minimum: 5}
+  validates :address, presence: true, length: { maximum: 50 , minimum: 5}
 
    private
 

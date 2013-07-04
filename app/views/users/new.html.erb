@@ -12,16 +12,16 @@
       <%= f.label :email, "Email*" %>
       <%= f.text_field :email %>
 
-      <%= f.label :password, "Password*" %>
+      <%= f.label :password, "Password* (minimum is 6 characters)" %>
       <%= f.password_field :password %>
 
       <%= f.label :password_confirmation, "Confirmation Password*" %>
       <%= f.password_field :password_confirmation %>
 
-      <%= f.label :contact, "Contact Number*" %>
+      <%= f.label :contact, "Contact Number* (minimum is 5 characters)" %>
       <%= f.text_field :contact %>
 
-      <%= f.label :address, "Address*" %>
+      <%= f.label :address, "Address* (minimum is 5 characters)" %>
       <%= f.text_field :address %>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
