@@ -1,197 +1,47 @@
-
-
-<center><h3>List Of Avaliable Products</h3><br /></center>
 <!DOCTYPE html>
 <html>
-<body background="grocery-store.jpg">
+<head>
+<body>
+<center>
+  <table border="1" cellspacing="0" cellpadding="10" id="c">
+  <h3><center>List Of Products</h3></center>
+  <thead>
+<th>S.No</th>
+<th>Products</th>
+<th>Availble Quantity<br>(in kg)</th>
+<th>Price<br>(each per kg/qua)</th>
+<th>Quantity Requried<br>(enter required qua as per kg/qua)</br></th>
+</thead>
+<% @product.each do |c| %>
+<tbody> 
+<tr >
 
-<center><table border="1"></center>
-<tr>
-  <th>S.No</th>
-  <th>Products</th>
-  <th>Availble Quantity</th>
-  <th>Price(each per kg)</th>
+  <td><center><%= c.id %> </center></td>
+  <td><center><%= c.name %></center></td>
+  <td><center><%= c.quantity %> </center></td>
+  <td><center><%= c.price %> </center></td>
+  <td><center><input type= "text" style="width:50px;"></center></td>
+  </tr>
 
-</tr>
-<tr>
-  <td><br /><br />1</td>
-  <td><h5>Fruits<br /></h5>Apples<br /></td>
-  <td><br /><br /><center>10kg</center></td>
-  <td><br /><br /><center>64.00Rs<center></td>
-</tr>
-
-<tr>
-  <td><br /><br />2</td>
-  <td><br /><br />Bananas<br /></td>
-  <td><br /><br /><center>12kg</center></td>
-  <td><br /><br /><center>24.00Rs<center></td>
-</tr>
-
-<tr>
-  <td><br /><br />3</td>
-  <td><br /><br />Orange<br /></td>
-  <td><br /><br /><center>13kg</center></td>
-  <td><br /><br /><center>44.00Rs<center></td>
-</tr>
-
-<tr>
-  <td><br /><br />4</td>
-  <td><br /><br />Pineapple<br /></td>
-  <td><br /><br /><center>14kg</center></td>
-  <td><br /><br /><center>60.00Rs<center></td>
-</tr>
+  </tbody >
 
 
-<tr>
-  <td><br /><br />5</td>
-  <td><br /><br />Guva<br /></td>
-  <td><br /><br /><center>5kg</center></td>
-  <td><br /><br /><center>14.00Rs<center></td>
-</tr>
-
-<tr>
-  <td><br /><br />6</td>
-  <td><br /><br />Strawberries<br /></td>
-  <td><br /><br /><center>7kg</center></td>
-  <td><br /><br /><center>98.00Rs<center></td>
-</tr>
-
-<tr>
-  <td><br /><br />7</td>
-  <td><br /><br />Grapes<br /></td>
-  <td><br /><br /><center>8kg</center></td>
-  <td><br /><br /><center>24.00Rs<center></td>
-</tr>
-
-
-<tr>
-  <td><br /><br />1</td>
-  <td><h5>Vegetables<br /></h5>Beans<br /></td>
-  <td><br /><br /><center>22kg</center></td>
-  <td><br /><br /><center>24.00Rs<center></td>
-</tr>
-
-
-<tr>
-  <td><br /><br />2</td>
-  <td><br /><br />Cabbage<br /></td>
-  <td><br /><br /><center>22kg</center></td>
-  <td><br /><br /><center>18.00Rs<center></td>
-</tr>
+<% end %>
 
 
 
-<tr>
-  <td><br /><br />3</td>
-  <td><br /><br />Capisum<br /></td>
-  <td><br /><br /><center>52kg</center></td>
-  <td><br /><br /><center>27.00Rs<center></td>
-</tr>
 
 
 
-<tr>
-  <td><br /><br />4</td>
-  <td><br /><br />Carrot<br /></td>
-  <td><br /><br /><center>32kg</center></td>
-  <td><br /><br /><center>22.00Rs<center></td>
-</tr>
+
+
+</table></center><br>
+
+
+<center><%= link_to "ADD", checkout_index_path, class: "btn btn-small btn-primary" %></center>
 
 
 
-<tr>
-  <td><br /><br />5</td>
-  <td><br /><br />Ginger<br /></td>
-  <td><br /><br /><center>22kg</center></td>
-  <td><br /><br /><center>08.00Rs<center></td>
-</tr>
-
-
-<tr>
-  <td><br /><br />6</td>
-  <td><br /><br />Potatoes<br /></td>
-  <td><br /><br /><center>32kg</center></td>
-  <td><br /><br /><center>24.00Rs<center></td>
-</tr>
-
-
-<tr>
-  <td><br /><br />7</td>
-  <td><br /><br />Tomatos<br /></td>
-  <td><br /><br /><center>44kg</center></td>
-  <td><br /><br /><center>54.00Rs<center></td>
-</tr>
-
-
-<tr>
-  <td><br /><br />8</td>
-  <td><br /><br />Mushroom<br /></td>
-  <td><br /><br /><center>33kg</center></td>
-  <td><br /><br /><center>46.00Rs<center></td>
-</tr>
-
-
-
-<tr>
-  <td><br /><br />9</td>
-  <td><br /><br />Onion<br /></td>
-  <td><br /><br /><center>06kg</center></td>
-  <td><br /><br /><center>45.22Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />1</td>
-  <td><h5>Grocery Items<br /></h5>Chocolates<br /></td>
-  <td><br /><br /><center>30packets</center></td>
-  <td><br /><br /><center>45.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />2</td>
-  <td><br /><br />cornflour<br /></td>
-  <td><br /><br /><center>50packets</center></td>
-  <td><br /><br /><center>25.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />3</td>
-  <td><br /><br />Dired Fruits<br /></td>
-  <td><br /><br /><center>56packets</center></td>
-  <td><br /><br /><center>45.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />4</td>
-  <td><br /><br />Honey<br /></td>
-  <td><br /><br /><center>12bottles</center></td>
-  <td><br /><br /><center>45.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />4</td>
-  <td><br /><br />Ice Cream Cones<br /></td>
-  <td><br /><br /><center>25pockets</center></td>
-  <td><br /><br /><center>15.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />5</td>
-  <td><br /><br />Noodles<br /></td>
-  <td><br /><br /><center>18packets</center></td>
-  <td><br /><br /><center>35.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />6</td>
-  <td><br /><br />Nuts<br /></td>
-  <td><br /><br /><center>22kg</center></td>
-  <td><br /><br /><center>56.50Rs<center></td>
-</tr><tr>
-  <td><br /><br />7</td>
-  <td><br /><br />Oil<br /></td>
-  <td><br /><br /><center>60</center></td>
-  <td><br /><br /><center>65.00Rs<center></td>
-</tr>
-<tr>
-  <td><br /><br />8</td>
-  <td><br /><br />Jam<br /></td>
-  <td><br /><br /><center>80bottles</center></td>
-  <td><br /><br /><center>45.00Rs<center></td>
-</tr>
-
-
-
-</table>
+</body>
+</head>
+</html>

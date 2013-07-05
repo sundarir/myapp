@@ -11,10 +11,13 @@ Myapp::Application.routes.draw do
     get "static_pages/contact"
 
 
+
+
  
 
   resources :users
   resources :products
+  resources :checkout, only: [:index]
     resources :sessions, only: [:new, :create, :destroy]
    
         match '/signup',  to: 'users#new'
