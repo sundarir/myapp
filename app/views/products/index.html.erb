@@ -1,47 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
+
 <body>
-<center>
-  <table border="1" cellspacing="0" cellpadding="10" id="c">
-  <h3><center>List Of Products</h3></center>
-  <thead>
+<center><table border="1" cellspacing="0" cellpadding="10" id="c"></center>
+<h3><center>List Of Products</h3></center>
+
+
 <th>S.No</th>
 <th>Products</th>
-<th>Availble Quantity<br>(in kg)</th>
-<th>Price<br>(each per kg/qua)</th>
+<th>Availble Quantity</th>
+<th>Price(each per kg/qua)</th>
 <th>Quantity Requried<br>(enter required qua as per kg/qua)</br></th>
-</thead>
-<% @product.each do |c| %>
-<tbody> 
+
+
 <tr >
 
-  <td><center><%= c.id %> </center></td>
-  <td><center><%= c.name %></center></td>
-  <td><center><%= c.quantity %> </center></td>
-  <td><center><%= c.price %> </center></td>
-  <td><center><input type= "text" style="width:50px;"></center></td>
-  </tr>
 
-  </tbody >
+<td><center>1</center></td>
+<td><center>Apples</center></td>
+<td><center>10kg</center></td>
+<td><center>64.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
 
+<tr >
 
-<% end %>
-
-
-
-
-
-
-
-
-</table></center><br>
+<td><center>2</center></td>
+<td><center>Strawberries</center></td>
+<td><center>14kg</center></td>
+<td><center>55.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
 
 
-<center><%= link_to "ADD", checkout_index_path, class: "btn btn-small btn-primary" %></center>
+<tr >
+
+<td><center>3</center></td>
+<td><center>Bananas</center></td>
+<td><center>36kg</center></td>
+<td><center>12.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>4</center></td>
+<td><center>Orange</center></td>
+<td><center>25kg</center></td>
+<td><center>69.50Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>5</center></td>
+<td><center>Grapes  </center></td>
+<td><center>29kg</center></td>
+<td><center>36.80Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+
+<tr >
+
+<td><center>6</center></td>
+<td><center>Carrot</center></td>
+<td><center>22kg</center></td>
+<td><center>22.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+
+<tr >
+
+<td><center>7</center></td>
+<td><center>Capisum</center></td>
+<td><center>25kg</center></td>
+<td><center>35.40Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>8</center></td>
+<td><center>TOmato</center></td>
+<td><center>18kg</center></td>
+<td><center>14.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>9</center></td>
+<td><center>Mushroom</center></td>
+<td><center>50kg</center></td>
+<td><center>55.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+
+<tr >
+
+<td><center>10</center></td>
+<td><center>Apples</center></td>
+<td><center>10kg</center></td>
+<td><center>64.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+
+<tr >
+
+<td><center>11</center></td>
+<td><center>Beans</center></td>
+<td><center>41kg</center></td>
+<td><center>24.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>12</center></td>
+<td><center>Chocolates</center></td>
+<td><center>50packets</center></td>
+<td><center>50.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>13</center></td>
+<td><center>Cornflour</center></td>
+<td><center>18kg</center></td>
+<td><center>51.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>14</center></td>
+<td><center>Honey</center></td>
+<td><center>22bottles</center></td>
+<td><center>88.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+
+<tr >
+
+<td><center>15</center></td>
+<td><center>Oil</center></td>
+<td><center>88packets</center></td>
+<td><center>78.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>16</center></td>
+<td><center>Nuts</center></td>
+<td><center>110kg</center></td>
+<td><center>49.40Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
+<tr >
+
+<td><center>17</center></td>
+<td><center>Noodles</center></td>
+<td><center>50packets</center></td>
+<td><center>30.00Rs</center></td>
+<td><center><input type= "text" style="width:50px;"></center></td>
+</tr>
+
 
 
 
 </body>
 </head>
 </html>
+
+
+
+
+
+
+</table><br><br>
+
+<%= link_to "ADD", checkout_index_path, class: "btn btn-small btn-primary" %>
