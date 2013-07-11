@@ -1,0 +1,4 @@
+<p id="notice"><%= notice %></p>
+<p>The product you have selected is <b><i><%= @product.name %> and price is <%= @product.price %> Rupees </i></b> </p><br />
+<%= link_to 'Continue Online Shopping', products_path %><br /><br />
+<%= link_to "CHECKOUT", checkout_index_path(:product => @product.id), class: "btn btn-small btn-primary" %>
